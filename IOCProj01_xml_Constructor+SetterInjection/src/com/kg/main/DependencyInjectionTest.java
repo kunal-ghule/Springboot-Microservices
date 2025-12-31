@@ -6,7 +6,7 @@ import com.kg.sbeans.WishMessageGenerator;
 
 public class DependencyInjectionTest {
 	public static void main(String[] args) {
-		System.out.println("DependencyInjectionTest | main()- start");
+		System.out.println("DependencyInjectionTest | main() - start");
 		//creating IOC container
 		FileSystemXmlApplicationContext ctx= new FileSystemXmlApplicationContext("src/com/kg/config/ApplicationContext.xml");
 		//get bean id of Target Spring bean class object
@@ -16,6 +16,6 @@ public class DependencyInjectionTest {
 		System.out.println(msg);
 		//closing the connection
 		ctx.close();
-		System.out.println("DependencyInjectionTest | main()- end");
+		System.out.println("DependencyInjectionTest | main() - end");
 	}
 }
